@@ -11,7 +11,7 @@
 - easier testing
 - more scalable structure
 
- v1.1.0
+  v1.1.0
 - Implemented FastAPI backend API
 - Added SQLAlchemy ORM integration
 - Created Expense model and database schema
