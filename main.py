@@ -26,7 +26,7 @@ def get_expenses(db: Session = Depends(get_db)):
 def get_expenses_by_id(expense_id: int, db: Session = Depends(get_db)):
     return get_expenses_by_id_crud(expense_id, db)
 
-@app.delete("/expenses/{expense_id}", response_model = ExpenseResponse)
+@app.delete("/expenses/{expense_id}")
 def delete_expense(expense_id: int, db: Session= Depends(get_db)):
     return delete_expense_crud(expense_id, db)
 
