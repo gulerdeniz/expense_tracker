@@ -2,7 +2,11 @@
 
 ## Version
 
-Current version: **v1.1.0**
+  v1.2.0
+- cleaner architecture
+- separation of concerns
+- easier testing
+- more scalable structure
 
 A Python-based backend API that allows users to create, read, update, and delete expenses. Built using FastAPI and SQLAlchemy ORM.
 
