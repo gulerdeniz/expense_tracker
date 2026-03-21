@@ -4,7 +4,7 @@
   v1.3.0
 - Added API integration tests with pytest
 - Verified CRUD endpoints using TestClient
-  
+
   v1.2.0
 - cleaner architecture
 - separation of concerns
