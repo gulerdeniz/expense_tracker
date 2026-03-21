@@ -1,12 +1,28 @@
 # Expense Tracker API
 
-## Version
-
+## Versions
+  v1.3.0
+- Added API integration tests with pytest
+- Verified CRUD endpoints using TestClient
+  
   v1.2.0
 - cleaner architecture
 - separation of concerns
 - easier testing
 - more scalable structure
+
+ v1.1.0
+- Implemented FastAPI backend API
+- Added SQLAlchemy ORM integration
+- Created Expense model and database schema
+- Implemented full CRUD endpoints:
+  - POST /expenses
+  - GET /expenses
+  - GET /expenses/{id}
+  - PUT /expenses/{id}
+  - DELETE /expenses/{id}
+- Added request validation with Pydantic schemas
+- Enabled automatic Swagger API documentation (/docs)
 
 A Python-based backend API that allows users to create, read, update, and delete expenses. Built using FastAPI and SQLAlchemy ORM.
 
