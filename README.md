@@ -1,6 +1,7 @@
 # Expense Tracker API
 
 ## Versions
+
   v1.3.0
 - Added API integration tests with pytest
 - Verified CRUD endpoints using TestClient
