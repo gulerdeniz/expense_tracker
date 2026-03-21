@@ -6,13 +6,13 @@
 - Added API integration tests with pytest
 - Verified CRUD endpoints using TestClient
 
-  v1.2.0
+v1.2.0
 - cleaner architecture
 - separation of concerns
 - easier testing
 - more scalable structure
 
-  v1.1.0
+v1.1.0
 - Implemented FastAPI backend API
 - Added SQLAlchemy ORM integration
 - Created Expense model and database schema
