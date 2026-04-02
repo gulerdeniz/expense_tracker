@@ -94,6 +94,41 @@ def test_delete_expenses():
 
     get_response = client.get(f"/expenses/{expense_id}")
 
-    data_get = get_response.json()
-
     assert get_response.status_code == 404
+
+def test_put_expenses():
+    payload1 = {
+        "amount": 100,
+        "category": "food",
+        "description": "dinner",
+        "date": "2026-03-17"
+    }
+
+    payload2 = {
+        "amount": 200,
+        "category": "food",
+        "description": "dinner",
+        "date": "2026-04-14"
+    }
+
+    post_response = client.post("/expenses", json=payload1)
+
+    post_data = post_response.json()
+
+    expense_id = post_data["id"]
+
+    put_response = client.put(f"/expenses/{expense_id}", json= payload2)
+
+    assert put_response.status_code == 200
+
+    get_response = client.get(f"/expenses/{expense_id}")
+
+    assert get_response.status_code == 200
+
+    get_data = get_response.json()
+
+    assert get_data["id"] == expense_id
+    assert get_data["amount"] == payload2["amount"]
+    assert get_data["category"] == payload2["category"]
+    assert get_data["description"] == payload2["description"]
+    assert get_data["date"] == payload2["date"]
