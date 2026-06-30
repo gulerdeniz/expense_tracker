@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from datetime import date
 
-## API'dan gelen verinin validasyon'unu (doğrulamasını) yapıyoruz.
+## API'dan gelen ve giden verinin validasyon'unu (doğrulamasını) yapıyoruz.
 class ExpenseCreate(BaseModel):
     amount: float
     category: str
