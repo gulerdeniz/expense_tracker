@@ -1,5 +1,12 @@
 # Expense Tracker API
 
+🔗 **Live Demo:** [expense-tracker-api-o931.onrender.com/docs](https://expense-tracker-api-o931.onrender.com/docs)
+💻 **Source Code:** [github.com/gulerdeniz/expense_tracker](https://github.com/gulerdeniz/expense_tracker)
+
+> Note: hosted on Render's free tier — the first request after a period of inactivity may take 30-50 seconds to wake up the server.
+
+---
+
 ## Versions
 
   v1.3.0
